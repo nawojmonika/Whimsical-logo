@@ -1,0 +1,50 @@
+:root {
+    --size: 827px;  /* 229px; */
+    --square-size: calc(var(--size) / 2.86);
+    --inner-square-size: calc(var(--square-size) - 29%);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+#logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8807cb;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+}
+
+.square {
+    position: absolute;
+    height: var(--square-size);
+    width: var(--square-size);
+    transform: rotate(45deg);
+    border-radius: 7%;
+}
+
+#logo > .square:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2%;
+    margin-right: 18.2%;
+    background-color: #ecd0f6;
+}
+
+.square:nth-of-type(2){
+    background-color: #fff;
+    margin-left: 16.8%;
+    margin-bottom: 1.2%;
+}
+
+.square > .square {
+    background-color: #8807cb;
+    height: var(--inner-square-size);
+    width: var(--inner-square-size);
+    transform: none;
+}
