@@ -1,6 +1,6 @@
 :root {
-    --size: 827px;  /* 229px; */
-    --square-size: calc(var(--size) / 2.86);
+    --size: 229px;
+    --square-size: calc(var(--size) / 2.85);
     --inner-square-size: calc(var(--square-size) - 28%);
     --shadow-size: calc(var(--inner-square-size) + 10%);
 }
@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.2%;
+    margin-bottom: 0.5%;
     margin-right: 18.2%;
     background-color: #ecd0f6;
 }
@@ -59,7 +59,7 @@ body {
 .square:nth-of-type(2){
     background-color: #fff;
     margin-left: 16.8%;
-    margin-bottom: 1.2%;
+    margin-bottom: 0.5%;
 }
 
 .square > .square {
