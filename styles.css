@@ -1,8 +1,8 @@
 :root {
     --size: 229px;
     --square-size: calc(var(--size) / 2.85);
-    --inner-square-size: calc(var(--square-size) - 28%);
-    --shadow-size: calc(var(--inner-square-size) + 10%);
+    --inner-square-size: calc(var(--square-size) * 0.72);
+    --shadow-size: calc(var(--inner-square-size) * 1.1);
     --container-size: calc(var(--size) * 2.5);
 }
 
@@ -18,7 +18,6 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
 
 .container {
     display: flex;
@@ -95,13 +94,11 @@ body {
 
 @keyframes logoFadeIn {
     from {
-        background-color: #8807cb;
         height: var(--container-size);
         width: var(--container-size);
     }
     to {
         width: var(--size);
         height: var(--size);
-        
     }
 }
