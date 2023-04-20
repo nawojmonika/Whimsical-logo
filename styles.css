@@ -3,10 +3,32 @@
     --square-size: calc(var(--size) / 2.85);
     --inner-square-size: calc(var(--square-size) - 28%);
     --shadow-size: calc(var(--inner-square-size) + 10%);
+    --container-size: calc(var(--size) * 2.5);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 800ms logoFadeIn 500ms ease-in-out forwards;
+    background-color: #8807cb;
+    height: var(--container-size);
+    width: var(--container-size);
+    border-radius: 50%;
 }
 
 #logo {
@@ -67,4 +89,19 @@ body {
     height: var(--inner-square-size);
     width: var(--inner-square-size);
     transform: none;
+}
+
+/* animations */
+
+@keyframes logoFadeIn {
+    from {
+        background-color: #8807cb;
+        height: var(--container-size);
+        width: var(--container-size);
+    }
+    to {
+        width: var(--size);
+        height: var(--size);
+        
+    }
 }
